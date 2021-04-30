@@ -2,9 +2,9 @@
   <div class="page-thumbnail-panel" v-loading="loading" v-if="pageData">
     <span class="unpublish" v-if="!pageData.isPublish && showPublishState">未发布</span>
     <div class="thumbnail-panel-cover">
-      <div class="header-mask">
-        <div class="details-btn" @click="preview(pageData._id)">预览</div>
-      </div>
+      <!--<div class="header-mask">-->
+        <!--<div class="details-btn" @click="preview(pageData._id)">预览</div>-->
+      <!--</div>-->
       <div class="image-wrapper">
         <img :src="pageData.coverImage || defaultCoverImage" alt=""/>
       </div>
@@ -91,43 +91,52 @@
 			return {
 				loading: false,
 				defaultCoverImage: require('@/common/images/quark--pagecover-image.png'),
-				operationDataList: [{
-					title: '发布',
-					eventType: 'publish',
-					extraClassName: '',
-					iconClass: ''
-				}, {
+				operationDataList: [
+				//     {
+				// 	title: '发布',
+				// 	eventType: 'publish',
+				// 	extraClassName: '',
+				// 	iconClass: ''
+				// },
+                    {
 					title: '发布模板市场',
 					eventType: 'publishTemplate',
 					extraClassName: '',
 					iconClass: ''
-				}, {
-					title: '复制链接',
-					eventType: 'copyUrl',
-					iconClass: ''
-				}, {
+				},
+                //     {
+				// 	title: '复制链接',
+				// 	eventType: 'copyUrl',
+				// 	iconClass: ''
+				// },
+                    {
 					title: '设为我的模板',
 					eventType: 'setTemplate',
 					iconClass: ''
-				}, {
-					title: '页面数据',
-					eventType: 'viewPageData',
-					iconClass: ''
-				}, {
-					title: '协作设置',
-					eventType: 'cooperation',
-					iconClass: ''
-				}, {
+				},
+                //     {
+				// 	title: '页面数据',
+				// 	eventType: 'viewPageData',
+				// 	iconClass: ''
+				// },
+                //     {
+				// 	title: '协作设置',
+				// 	eventType: 'cooperation',
+				// 	iconClass: ''
+				// },
+                    {
 					title: '删除',
 					eventType: 'delete',
 					extraClassName: 'error',
 					iconClass: ''
-				}, {
-					title: '退出协作',
-					eventType: 'unCooperation',
-					extraClassName: 'error',
-					iconClass: ''
-				}]
+				},
+                //     {
+				// 	title: '退出协作',
+				// 	eventType: 'unCooperation',
+				// 	extraClassName: 'error',
+				// 	iconClass: ''
+				// }
+				]
 			}
 		},
 		methods: {

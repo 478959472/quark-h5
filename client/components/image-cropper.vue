@@ -7,7 +7,7 @@
               :before-upload="beforeUpload"
               accept="image/gif, image/jpeg, image/png, image/bmp"
               :show-file-list="false">
-        <p class="cropper-res-img-title">更换主图</p>
+        <p class="cropper-res-img-title">更换封面</p>
       </el-upload>
     </div>
     <el-dialog

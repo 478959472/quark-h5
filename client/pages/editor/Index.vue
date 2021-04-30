@@ -35,15 +35,15 @@
         <el-tab-pane label="属性" name="属性">
           <attrEdit></attrEdit>
         </el-tab-pane>
-        <el-tab-pane label="事件" name="事件">
-          <eventEdit></eventEdit>
-        </el-tab-pane>
-        <el-tab-pane label="动画" name="动画">
-          <animationEdit></animationEdit>
-        </el-tab-pane>
-        <el-tab-pane label="JS脚本" name="脚本">
-          <scriptEdit></scriptEdit>
-        </el-tab-pane>
+        <!--<el-tab-pane label="事件" name="事件">-->
+          <!--<eventEdit></eventEdit>-->
+        <!--</el-tab-pane>-->
+        <!--<el-tab-pane label="动画" name="动画">-->
+          <!--<animationEdit></animationEdit>-->
+        <!--</el-tab-pane>-->
+        <!--<el-tab-pane label="JS脚本" name="脚本">-->
+          <!--<scriptEdit></scriptEdit>-->
+        <!--</el-tab-pane>-->
         <el-tab-pane label="页面设置" name="页面属性">
           <pageAttrEdit></pageAttrEdit>
         </el-tab-pane>

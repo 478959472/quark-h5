@@ -14,7 +14,7 @@
 	export default {
 		methods: {
 			beforeUpload(file){
-				if(file.size > 20 * 1024 * 1024){
+				if(file.size > 200 * 1024 * 1024){
 					this.$message.error('psd文件不能超过20M！')
 					return;
 				}
