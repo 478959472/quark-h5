@@ -516,7 +516,7 @@ function _objectSpread(target) {
 
 var configDict = {
   development: {
-    baseURL: 'http://localhost:4000'
+    baseURL: 'http://10.10.215.109:4000'
   },
   production: {
     baseURL: config_0.baseURL

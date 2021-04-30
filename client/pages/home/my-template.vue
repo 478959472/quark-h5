@@ -46,7 +46,7 @@
 				pageList: [],
 				pageModeList: [],
 				searchParams: {
-					pageMode: 'h5'
+					pageMode: ''
 				},
 				previewId: '',
 				showPreview: false,

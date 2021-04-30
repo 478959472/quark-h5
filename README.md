@@ -296,7 +296,7 @@ npm install pm2 -g
 ```
 npm run start
 ```
-启动完访问http://localhost:4000 就可以看到工程页面了
+启动完访问http://10.10.215.109:4000 就可以看到工程页面了
 
 
 

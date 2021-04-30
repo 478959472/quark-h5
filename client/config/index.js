@@ -6,7 +6,7 @@ import $config from '../../config'
 
 const configDict = {
 	development: {
-		baseURL: 'http://localhost:4000'
+		baseURL: 'http://10.10.215.109:4000'
 	},
 	production: {
 		baseURL: $config.baseURL
