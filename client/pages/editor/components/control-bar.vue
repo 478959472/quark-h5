@@ -30,10 +30,10 @@
       <i class="iconfont iconyulan"></i>
       <p>预览保存</p>
     </div>
-    <!--<div class="button-item" @click="save">-->
-      <!--<i class="iconfont iconbaocun"></i>-->
-      <!--<p>保存</p>-->
-    <!--</div>-->
+    <div class="button-item" @click="save">
+      <i class="iconfont iconbaocun"></i>
+      <p>生成海报</p>
+    </div>
     <!--<div class="button-item" @click="publishFn">-->
       <!--<i class="iconfont iconfabu"></i>-->
       <!--<p>发布</p>-->
