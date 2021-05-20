@@ -25,7 +25,8 @@
                 @showPreview="showPreviewFn"
                 @cancel="cancelFn"
                 @publish="publishFn"
-                @save="saveFn"/>
+                @save="saveFn"
+                @downloadPoster="downloadPoster"/>
       </div>
       <editorPan :scale.sync="canvasConfig.scale"/>
     </div>
@@ -78,6 +79,8 @@
 
 	import previewPage from './components/preview'
 	import imageLibs from '@client/components/image-libs'
+
+  import { takeScreenshot, downloadPoster } from './components/canvas-helper.js'
 
 	import {mapState} from 'vuex'
 	import html2canvas from 'html2canvas'
@@ -164,6 +167,12 @@
 					this.showPreview = false
 				})
 			},
+      /**
+       * 下载海报
+       */
+      async downloadPoster() {
+        downloadPoster();
+      },
 			/**
 			 * 保存
 			 */

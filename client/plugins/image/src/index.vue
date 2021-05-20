@@ -11,7 +11,7 @@
 		props: {
 			imageSrc: {
 				type: String,
-        default: 'http://seopic.699pic.com/photo/50051/4111.jpg_wh1200.jpg'
+        default: 'http://oss1.rsc1.cn:9271/group1/M00/00/95/rBIJl2CWAoiAD2WVAAALeclUHnA607.png'
       }
 		}
 	}

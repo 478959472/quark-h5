@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev-client": "vue-cli-service serve",
-    "dev-server": "nodemon server/app.js dev -L",
+    "dev-server": "nodemon --max-old-space-size=8192 server/app.js dev -L",
     "dev": "npm run dev-client",
     "build-client": "vue-cli-service build",
     "start": "pm2 start server/app.js",
@@ -19,7 +19,7 @@
     "crypto-js": "^3.1.9-1",
     "dom-to-image": "^2.6.0",
     "element-ui": "^2.12.0",
-    "html2canvas": "^1.0.0-rc.5",
+    "html2canvas": "^1.0.0-rc.7",
     "koa-body": "^4.1.1",
     "koa-ejs": "^4.2.0",
     "lodash": "^4.17.15",

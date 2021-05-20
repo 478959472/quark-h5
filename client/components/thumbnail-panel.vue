@@ -279,7 +279,7 @@
 <style lang="scss" scoped>
   .page-thumbnail-panel {
     width: 224px;
-    height: 296px;
+    height: 396px;
     border-radius: 4px;
     overflow: hidden;
     display: flex;

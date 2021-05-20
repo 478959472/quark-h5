@@ -27,11 +27,15 @@
       </div>
     </UploadPsd>
     <div class="button-item" @click="showPreview">
-      <i class="iconfont iconyulan"></i>
-      <p>预览保存</p>
-    </div>
-    <div class="button-item" @click="save">
       <i class="iconfont iconbaocun"></i>
+      <p>保存</p>
+    </div>
+<!--    <div class="button-item" @click="save">-->
+<!--      <i class="iconfont iconbaocun"></i>-->
+<!--      <p>保存</p>-->
+<!--    </div>-->
+    <div class="button-item" @click="downloadPoster">
+      <i class="iconfont icontupian"></i>
       <p>生成海报</p>
     </div>
     <!--<div class="button-item" @click="publishFn">-->
@@ -114,6 +118,12 @@
 			 */
 			showPreview(){
 				this.$emit('showPreview')
+      },
+      /**
+       * 下载海报
+       */
+      downloadPoster(){
+        this.$emit('downloadPoster')
       },
 			/**
 			 * 发布
